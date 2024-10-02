@@ -8,7 +8,7 @@ function OddEven(){
     const [result,setResult]=useState('');
     const evalv=async()=>{
         try{
-            const response= await fetch(`http://localhost:8080/oddeven?num=${num}`);
+            const response= await fetch(`https://zuzoodinesh.github.io/Practicea/oddeven?num=${num}`);
             const data=await response.text();
             setResult(data);
         }
